@@ -1,0 +1,1769 @@
+/* ..............main elementsss start here.....  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Open Sans', sans-serif; 
+}
+
+
+html,body{
+    width: 100%;
+    background-color: #f4f5f5;
+    font-size: 12px;
+}
+
+
+#wrapper{
+min-height: 100vh;
+padding-bottom: 40px;
+/* background-color: white; */
+}
+
+
+/* ..............main elementsss end here.....  */
+
+
+
+
+
+
+
+/* --------------------Navbar------------- */
+#menu{
+    text-transform: uppercase;
+    background: #00647b;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-height: 48px;
+    border-bottom: .3em solid rgba(1, 200, 190, 0.6);
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    /* overflow: hidden; */
+}
+
+
+#menu>ul{
+    display: inline-flex;
+}
+
+
+#menu .logo img{
+    /* margin:0 0 0px 60px ; */
+    width: 150px;
+    padding: 1.4em;
+    /* border-radius: 20px; */
+    /* height: auto; */
+    }
+
+nav #menubar ul{
+ position: relative;
+}
+
+
+nav #menubar li a{
+    display: block;
+}
+
+
+.right ul{
+display: inline-flex;
+}
+
+
+.right ul li{
+    list-style-type: none;
+    }
+
+
+    nav li input{
+    background-image: url(../assets/search.svg) ;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 4px 5px;
+    width: 1.5em;
+    color: #ff8b00d1;
+    font-weight: 600;
+    margin: 12px 12px 0 0 ;
+    padding: 2px;
+    border-radius: 6px;
+    outline: none;
+    text-indent: 1.5em;
+    border: none;
+    transition: width 500ms;
+    display: none;
+}
+
+.right>ul>li .fb{
+    margin: 12px 10px 0 0;
+    width: 20px;
+    transition: 500ms;
+}
+
+
+.right>ul>li .utube{
+    margin: 12px 10px 0 0;
+    width: 22px;
+    transition: 500ms;
+}
+
+
+.right>ul>li .utube:hover, .right>ul>li .fb:hover {
+width: 24px ;
+}
+
+
+
+
+#menubar>li{
+    list-style-type: none;
+    display: inline-flex;
+    display: block;
+}
+
+
+#menubar>li>a{       
+padding: 14px 30px;
+text-decoration: none;
+color: rgb(255, 255, 255);
+transition: background-color 500ms;
+}
+
+
+
+#menu input::placeholder{
+    color: rgba(122, 122, 122,.4);
+    font-weight: 100;
+    font-size:1em;
+}
+
+
+#menu input[type='search']:focus {
+    width: 140px;
+}
+
+
+.active{
+    background-color: #ff8b00d1 !important;
+}
+
+
+#menu #menubar .submenu ul{
+    position: absolute;
+    overflow: hidden;
+    list-style-type: none;
+    background-color:#00647b;
+    box-shadow: 5px 5px 20px rgba(83, 83, 83,.3);
+    transition: all 500ms;
+    border-bottom: 2px solid rgba(1, 200, 190, 0.6);
+}
+
+
+.submenu{
+    display: none;
+}
+
+
+#menu #menubar .submenu ul>li>a{
+padding: 20px 15px;
+display: block;
+text-decoration: none;
+color: white;
+
+}
+
+
+
+#menubar li:hover .submenu{
+        display: block;
+}
+
+
+
+#menubar li:hover {
+    background-color: teal;
+}
+
+
+
+/* ---------------------navbar end--------------- */
+
+
+
+
+/* --------------cover------------- */
+
+.bg{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0,.2), transparent); 
+    /* height: 500px; */
+    background-position: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+
+    #cover, .cover{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.699);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        z-index: 3;
+        border-radius: 30px;
+        
+
+    }
+
+
+
+   
+
+
+    #cover h2{
+        padding: 2em;
+    color: #ff8b00;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    }
+
+
+    #cover button a{
+        text-decoration: none;
+         color: #fff;
+         font-size: 1.4em;
+        font-weight: 700;
+        background-color: black;
+        background: transparent;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 1.2em .5em;
+        display: block;
+    }
+
+    #cover .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-bottom: 2em;
+        white-space: nowrap;
+
+    }
+
+
+    #cover button{
+    background-color: transparent;
+    margin: 0 1.8em;
+    width: 55%;
+    background-color: #ff8b00;
+    border-radius: 40px;
+    transition: 1000ms;
+    border: 1px solid #2ed9ff;
+
+    }
+
+
+    #cover Button:hover{
+    width:85% ;
+    }
+
+
+    
+    /* ---------------cover End----------- */
+
+
+
+
+
+    /* ............body content start ......*/
+
+.container{
+    background-color: white;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+width: auto;
+height: auto;
+}
+
+
+
+.content{
+    margin: 1.8em;
+    display: flex;
+    margin-top: 3.5em;
+}
+
+
+.content-1{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 20px rgba(70, 69, 69,.3);
+    justify-content: space-between;
+    align-items:center;
+    transition: 1000ms;
+    transform: scale(1);
+
+}
+
+.content-1:hover{
+transform: scale(1.02);
+}
+
+
+.content-1>.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.6em 2.5em;
+}
+
+
+.content-1>.text>h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ff8b00d1; 
+    padding-bottom: .8em;
+}
+
+.content-1>.text>button>a{
+    text-decoration: none;
+    text-align: center;
+    color: #00647b;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 500ms;
+}
+
+
+.content-1>.text>button:hover a{
+color: #ffffff;
+}
+
+
+.content-1>.text>button{
+background-color: white;
+padding: 1em 1.8em;
+margin: 30px;
+border: 1px solid #fcab48d1;
+border-radius: 50px;
+width: 55%;
+transition: all 1000ms;
+box-shadow: 1px 1px 2px grey;
+}
+
+
+.content-1>.text>button:hover{
+background-color: #00647b;
+border: 1px solid #2ed9ff;
+width: 60%;
+
+}
+
+
+.content-1>.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+
+.content-1>.image>img{
+    max-width: 400px;
+    height: max-content;
+} 
+
+
+/* ---------------- body content-1 style end here  */
+
+
+
+
+
+
+
+
+ /* ---------------- body content-2 style start here  */
+
+
+.content-2{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 20px rgba(70, 69, 69,.3);
+    justify-content: space-around;
+    align-items:center;
+    transition: 1000ms;
+    transform: scale(1);
+
+}
+
+.content-2:hover{
+transform: scale(1.02);
+}
+
+
+.content-2>.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.6em 2.5em;
+    width: 60%;
+    height: 100%;
+    margin-bottom: 1.5em;
+}
+.content-2 .details ul li{
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 0px 0 0 -1em ;
+    color: rgb(110, 110, 110);
+    list-style:url('../assets/list\ style\ icon.png');
+    list-style-position: inside;
+    transition: font-size 100ms ease-in;
+}
+
+.content-2 .details ul li:hover{
+    outline: 2px solid #ff8b00;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+.content-2>.text h2{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: #ff8b00d1; 
+}
+
+
+
+.content-2>.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 2.5em;
+}
+
+
+.content-2>.image>img{
+    width: 300px;
+    height: max-content;
+} 
+
+/* ..................body .content-2 end here ......*/
+
+
+
+
+
+
+/* ................footer start......... */
+ #footer{
+background-color: rgb(68, 68, 67);
+padding: 0.4em .2em;
+color: white;
+text-align: center;
+display: block;
+font-size: 1em;
+margin-top: -30px;
+min-height: 30px;
+height: auto;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+#footer p{
+border-left: 1px solid white;
+border-right: 1px solid white;
+display: inline-block;
+padding: 0 1em;
+}
+/* ..............footer end ........... */
+
+
+
+
+
+
+
+
+
+/* ..................CV Gallery Styles Start Here.......  */
+
+
+.cv-container{
+    display: flex;
+    padding: 1.8em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.cv-data{
+    box-shadow: 5px 5px 6px 4px rgb(83 83 83 / 40%);
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    text-align: center;
+    margin: 2.5em 3.5em;
+    transition: 1000ms;
+    z-index: 1;
+    max-width: 400px;
+
+}
+
+
+.cv-data:hover{
+transform: scale(1.02);
+}
+
+
+
+.cv-data>.cv-name>h2{
+    font-size: 2rem;
+    color: #ff8b00d1;
+    padding: .5em;
+}
+
+
+.cv-data>.cv-image>img{
+max-width: 100%;
+height: auto;
+}
+
+
+
+.cv-image>.btn>.btn-cv{
+    margin: 1.2em;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.cv-image>.btn>.btn-cv>a{
+    padding: 0.8em;
+    border-radius: 20px;
+    border: 1px solid #00647b;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff8b00;
+    display: block;
+    width: 11em;
+    transition: all 500ms;
+}
+
+
+
+.cv-image>.btn>.btn-cv>a:hover{
+    color: #fff;
+    background-color: #ff8b00;
+}
+
+
+
+.cv-image>.btn>.btn-cv:hover a{
+    width: 14em;
+}
+
+
+.btn-more{
+    margin: 6em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-more>a{
+    text-decoration: none;
+    color: #ff8b00;
+    font-size: 2rem;
+    border-radius: 50px;
+    border: 2px solid #00647b;
+    padding: 1em 3.4em;
+    text-transform: uppercase;
+    transition: 1000ms;
+}
+
+
+.btn-more>a:hover{
+    padding: 1em 4.5em;
+    color: white;
+    background-color: #00647b;
+
+}
+
+
+hr{
+    width: 90%;
+    margin: auto;
+    border: 6px dashed #437681;
+    opacity: 0.2;
+    border-radius: 5px;
+}
+
+
+
+
+/* ................CV Gallery Styles End Here.......  */
+
+
+
+
+
+/* ................Slideshow Gallery Styles Start Here.......  */
+
+
+.gallery{
+    margin: 1em;
+}
+
+
+
+.g-heading>h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ff8b00;
+    /* padding-left: .5em; */
+    border-bottom: 4px solid #00647b;
+    border-radius: 50px;
+    width: 80%;
+    margin: 1em auto 1em auto;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 1500ms;
+
+}
+
+.g-heading>h2:hover{
+    letter-spacing: 3px ;
+}
+
+
+
+.video-container{
+    display: flex;
+    padding: 1.8em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* width: 100vw; */
+}
+
+
+.video-data{
+    box-shadow: 5px 5px 6px 4px rgb(83 83 83 / 40%);
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    text-align: center;    
+    margin: 2.5em 3.5em;
+    z-index: 1;
+     /* width: 80vw; */
+}
+
+
+
+.video-data>.video-name>h2{
+    font-size: 2rem;
+    color: #ff8b00d1;
+    padding: 0.8em;
+
+}
+
+
+ video{
+height: auto;
+max-width: 100%;
+overflow: hidden;
+}
+.video-data>.vidvideo-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: auto;
+    width: 80vw;
+
+    outline: none;
+    }
+
+
+
+/* ................Slideshow Gallery Styles End Here.......  */
+
+
+
+
+
+/* ..................contact Us.html style start............  */
+
+
+.contact-us .form, .contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form tr td, form tr td input, form tr td textarea  {
+    width: 400px;
+    resize: none;
+    outline: none;
+    margin: auto;
+    padding: .9em;
+    gap: 0;
+    /* max-width: 100%; */
+    /* max-width: 400px; */
+}
+
+
+
+form tr td{
+    background-color: #d4d4d433;
+    /* width: 100%; */
+    }
+
+form tr td:first-child{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ff8b00;
+}
+
+
+form tr td label{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #ff8b00;
+    }
+
+
+
+form tr td ::placeholder{
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: 400;
+    color: grey;
+}
+
+
+
+form tr #submit button {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ff8b00;
+    padding: 5px 60px;
+    border: 1px solid #00647b;
+    border-radius: 20px;
+    transition: 500ms;
+    margin: 1.8em 0;
+}
+
+
+form tr #submit button:hover {
+padding: 0.5em 8em ;
+background-color: #ff8b00;
+color: white;
+font-weight: 700;
+}
+
+.card-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* width: 60%; */
+    box-shadow: 5px 5px 6px 4px rgb(83 83 83 / 40%);
+    margin: 3.5em auto;
+    padding: 1.8em;
+    transform: scale(1);
+    transition: 100;
+}
+
+
+.card-contact:hover{
+    transform: scale(1.02);
+}
+
+
+.card-contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #ff8b00;
+    padding: 0.5em 1em;
+}
+
+
+
+.card-contact #number{
+    font-size: 3em;
+    margin: 0;
+}
+
+.card-contact figure img{
+    max-width: 100%;
+    width: 600px;
+}
+
+/* ..................contact Us.html style start............  */
+
+
+/* ................ FAQS Style start here..................  */
+
+.form-2 form tr td{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ff8b00;
+    padding: 1em;
+    }
+
+    .form-2 form tr td:nth-child(2){
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 600;
+        color: #3f3f3f;
+        }
+
+        .form-2 form #head td{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.7em;
+            font-weight: 900;
+            color: #ff8b00;
+            padding: 1.2em;
+            }
+
+
+/* ................ FAQS Style End here..................  */
+
+
+
+
+
+ /* ........................... Slider Animation start .................. */
+
+
+ #slider{
+    box-shadow: 2px 2px 2px grey;
+    margin-top: 0;
+    /* display: flex; */
+    overflow: hidden;
+    /* width: 1200; */
+    /* position: absolute; */
+    /* top: 10px; */
+    /* height: 800px; */
+    z-index: 0;
+    max-width: 100%;
+    /* opacity: 0.3; */
+}
+
+#slider figure{
+    /* z-index: 1; */
+    position: relative;
+    width: 700%;
+    /* max-height: ; */
+    /* margin: auto 20px auto 20px; */
+    margin: 0;
+    left: 0;
+    /* display: flex; */
+    /* flex-direction: row; */
+    animation: 15s slider infinite linear;
+
+}
+#slider figure img{
+    width: 14.28571428571429%;
+    /* max-height: 100vh; */
+    /* max-width: min-content; */
+    padding: 0 1px;
+    background-color: rgb(255, 191, 117);
+    float: left;
+    box-shadow: 2px 2px 2px grey;
+
+}
+
+@keyframes slider {
+    0% {
+        left:0;
+    }
+
+    8% {
+        left:0;
+    }
+
+    13%{
+        left: -100%;
+    }
+
+    23%{
+        left:-100%;
+    }
+
+    28%{
+        left:-200%;
+    }
+    43%{
+        left:-200%;
+    }
+    48%{
+        left:-300%;
+    }
+    60%{
+        left:-300%;
+    }
+
+    65%{
+        left:-400%;
+    }
+
+    75%{
+        left:-400%;
+    }
+
+    80%{
+        left:-500%;
+    }
+
+    90%{
+        left:-500%;
+    }
+
+    95%{
+        left:-600%;
+    }
+
+    100%{
+        left:-600%;
+    }
+
+    
+
+
+
+}
+
+
+
+/* .................... slider animation end ..........  */
+
+
+
+/* ..........Media Queriessss Start Here ............ */
+
+
+@media screen and (max-width:850px) and (min-width:741px)  {
+
+    .content-1>.image>img{
+        max-width: 100%;
+        /* height: max-content; */
+    } 
+
+    
+
+ 
+
+
+    .content-1>.text>button{
+        width: 60%;
+        }
+        
+        
+        .content-1>.text>button:hover{
+        width: 70%;
+        
+
+    }
+
+    #cover h2{
+        padding: 1.2em;
+    /* color: #ff8b00; */
+    font-size: 1.8em;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    /* text-align: center; */
+    letter-spacing: 2px;
+    }
+
+
+    #cover button a{
+        text-decoration: none;
+         color: #fff;
+         font-size: 1em;
+        font-weight: 600;
+        background-color: black;
+        background: transparent;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 10px 4px;
+        display: block;
+    }
+
+    #cover .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-bottom: 2em;
+        white-space: nowrap;
+
+    }
+
+
+    #cover button{
+    background-color: transparent;
+    margin: 0 1.8em;
+    width: 55%;
+    background-color: #ff8b00;
+    border-radius: 40px;
+    transition: 1000ms;
+    border: 1px solid #2ed9ff;
+
+    }
+
+
+    #cover Button:hover{
+    width:70% ;
+    }
+
+    }
+
+
+
+
+@media screen and (max-width:740px) and (min-width:650px){
+    
+    
+    
+    
+    
+    
+    .content-1>.image>img{
+        max-width: 100% ;
+        height: fit-content;
+    } 
+
+    .content-1, .content-2, .content{
+        flex-direction: column;
+        /* max-width: 500px; */
+    }
+
+
+    .content-1{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px rgba(70, 69, 69,.3);
+        justify-content: space-between;
+        align-items:center;
+        transition: 1000ms;
+        transform: scale(1);
+    
+    }
+
+    .content-2{
+        flex-direction: column;
+        align-items:flex-start;
+
+    
+    }
+    .content-2 .image{
+        margin: 0 auto;
+    
+    }
+
+    .content-2>.text{
+        width: 100%;
+    }
+
+    
+    #menubar>li>a{       
+        padding: 14px 20px;
+        overflow: hidden ;
+        }
+
+
+        #menu input[type='search']:focus {
+            width: 75px;
+        }
+     
+
+        #cover h2{
+            padding: 1.2em;
+        /* color: #ff8b00; */
+        font-size: 1.8em;
+        font-weight: 500;
+        /* text-transform: uppercase; */
+        /* text-align: center; */
+        letter-spacing: 2px;
+        }
+    
+    
+        #cover button a{
+            text-decoration: none;
+             color: #fff;
+             font-size: 1em;
+            font-weight: 600;
+            background-color: black;
+            background: transparent;
+            text-transform: uppercase;
+            /* letter-spacing: 2px; */
+            /* padding: 10px 4px; */
+            /* display: block; */
+        }
+    
+        #cover .buttons{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            width: 70%;
+            /* margin-bottom: 2em; */
+            /* white-space: nowrap; */
+    
+        }
+    
+    
+        #cover button{
+        background-color: transparent;
+        margin: 0 1.8em;
+        width: 55%;
+        background-color: #ff8b00;
+        border-radius: 40px;
+        transition: 1000ms;
+        border: 1px solid #2ed9ff;
+    
+        }
+    
+    
+        #cover Button:hover{
+        width:85% ;
+        }
+    
+        
+
+}
+
+
+@media screen and (max-width:650px) and (min-width:520px){
+
+
+   
+    
+    
+    
+    
+    .content-1>.image>img{
+        max-width: 100% ;
+        height: fit-content;
+    } 
+
+    .content-1, .content-2, .content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    form tr td, form tr td input, form tr td textarea  {
+        width: 100%;
+        /* padding: .8em; */
+        /* max-width: 100%; */
+        padding: 5px 30px;
+    }
+    .form-2 form tr td:nth-child(1){
+        padding-bottom: 0;
+    }
+    .form-2 form tr td:nth-child(2){
+        padding-top: 4px;
+    }
+    .content-1>.text>h2{
+        padding-bottom: 0;
+    }
+    form tr #submit button {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 5px 60px;
+        /* margin: 1.8em auto; */
+    }
+    form tr:last-child td{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form tr #submit button:hover {
+        padding: 0.5em 5em;
+    }
+
+
+    .form-2 form #head td {
+        display: none;
+    }
+    form tr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    table{
+        width: 100%;
+    }
+
+
+    .content-1{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px rgba(70, 69, 69,.3);
+        justify-content: space-between;
+        align-items:center;
+        transition: 1000ms;
+        transform: scale(1);
+    
+    }
+
+    .content-2{
+        flex-direction: column;
+        align-items:flex-start;
+
+    
+    }
+    .content-2 .image{
+        margin: 0 auto;
+    
+    }
+
+    .content-2>.text{
+        width: 100%;
+    }
+
+
+    
+    
+
+    #cover{
+        /* max-width: 500px; */
+        /* margin: auto; */
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #cover h2{
+        padding: 1.2em;
+    /* color: #ff8b00; */
+    font-size: 1.8em;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    /* text-align: center; */
+    letter-spacing: 2px;
+    }
+
+
+    #cover button a{
+        text-decoration: none;
+         color: #fff;
+         font-size: 1em;
+        font-weight: 600;
+        background-color: black;
+        background: transparent;
+        text-transform: uppercase;
+        /* letter-spacing: 2px; */
+        /* padding: 10px 4px; */
+        /* display: block; */
+    }
+
+    #cover .buttons{
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 90%;
+        /* margin-bottom: 2em; */
+        /* white-space: nowrap; */
+
+    }
+
+
+    #cover button{
+    background-color: transparent;
+    margin: 0 1.8em;
+    width: 75%;
+    background-color: #ff8b00;
+    border-radius: 40px;
+    transition: 1000ms;
+    border: 1px solid #2ed9ff;
+
+    }
+
+
+    #cover Button:hover{
+    width:85% ;
+    }
+
+
+
+    #menubar>li>a{       
+        padding: 14px 10px;
+        }
+
+        
+        #cover img{
+            width: 300px;
+            height: auto;
+            }
+
+            #cover h2{
+            font-size: 1.5em;
+            }
+
+            
+
+            #menubar>li>a{       
+                padding: 14px 10px;
+                }
+
+                form tr td, form tr td input, form tr td textarea {
+                    /* width: 300px; */
+                }     
+               
+}
+
+@media screen and (max-width:520px) and (min-width:400px) {
+
+
+       
+    html,body{
+        /* width: 100%; */
+    /* min-width: 300px; */
+    font-size: 10px;
+    }
+    
+    
+    
+    .content-1>.image>img{
+        max-width: 100% ;
+        height: fit-content;
+    } 
+
+    .content-1, .content-2, .content{
+        flex-direction: column;
+        /* max-width: 500px; */
+    }
+
+
+    .content-1{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px rgba(70, 69, 69,.3);
+        justify-content: space-between;
+        align-items:center;
+        transition: 1000ms;
+        transform: scale(1);
+    
+    }
+
+    .content-2{
+        flex-direction: column;
+        align-items:flex-start;
+
+    
+    }
+    .content-2 .image{
+        margin: 0 auto;
+    
+    }
+
+    .content-2>.text{
+        width: 100%;
+    }
+
+    #cover button a{
+        text-decoration: none;
+         color: #fff;
+         font-size: .7em;
+        font-weight: 600;
+        background-color: black;
+        background: transparent;
+        text-transform: uppercase;
+        /* letter-spacing: 2px; */
+        /* padding: 10px 4px; */
+        /* display: block; */
+    }
+
+    #cover .buttons{
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 90%;
+        /* margin-bottom: 2em; */
+        /* white-space: nowrap; */
+
+    }
+
+
+    #cover button{
+    background-color: transparent;
+    margin: 0 1.8em;
+    width: 75%;
+    background-color: #ff8b00;
+    border-radius: 40px;
+    transition: 1000ms;
+    border: 1px solid #2ed9ff;
+
+    }
+
+
+    #cover Button:hover{
+    width:85% ;
+    }
+
+
+
+    #menubar>li>a{       
+        padding: 15px 10px;
+        }
+
+      
+
+            #cover h2{
+            font-size: 1.3em;
+            margin-bottom: 6px;
+            }
+            
+            #menu .logo img, #menu .logo    {
+                display: none;
+            }
+
+            
+
+    form tr td, form tr td input, form tr td textarea  {
+        width: 100%;
+        /* padding: .8em; */
+        /* max-width: 100%; */
+        padding: 5px 30px;
+    }
+    .form-2 form tr td:nth-child(1){
+        padding-bottom: 0;
+    }
+    .form-2 form tr td:nth-child(2){
+        padding-top: 4px;
+    }
+    .content-1>.text>h2{
+        padding-bottom: 0;
+    }
+    form tr #submit button {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 5px 60px;
+        /* margin: 1.8em auto; */
+    }
+    form tr:last-child td{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form tr #submit button:hover {
+        padding: 0.5em 5em;
+    }
+
+
+    .form-2 form #head td {
+        display: none;
+    }
+    form tr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+}
+
+
+
+
+@media screen and (max-width:400px){
+
+
+
+       
+    html,body{
+    font-size: 9px;
+    min-width: 250px;
+    }
+    
+    
+    
+    .content-1>.image>img{
+        max-width: 100% ;
+        height: fit-content;
+    } 
+
+    .content-1, .content-2, .content{
+        flex-direction: column;
+    }
+
+
+    .content-1{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px rgba(70, 69, 69,.3);
+        justify-content: space-between;
+        align-items:center;
+        transition: 1000ms;
+        transform: scale(1);
+    
+    }
+
+    .content-2{
+        flex-direction: column;
+        align-items:flex-start;
+
+    
+    }
+    .content-2 .image{
+        margin: 0 auto;
+    
+    }
+
+    .content-2>.text{
+        width: 100%;
+    }
+
+
+    
+    #cover{
+       /* border-radius: 1px; */
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+     .cover{
+        border-radius: 10px;
+    }
+    #cover button a{
+        text-decoration: none;
+         color: #fff;
+         font-size: .7em;
+        font-weight: 600;
+        background-color: black;
+        background: transparent;
+        text-transform: uppercase;
+        /* letter-spacing: 2px; */
+        padding: 10px 4px;
+        /* display: block; */
+    }
+
+    #cover .buttons{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        row-gap: 10px;
+        flex-direction: column;
+        margin-bottom: 2em;
+         white-space: nowrap;
+
+    }
+
+
+    #cover button{
+    background-color: transparent;
+    /* margin: 0 1.8em; */
+    width: 80%;
+    background-color: #ff8b00;
+    border-radius: 20px;
+    transition: 1000ms;
+    border: 1px solid #2ed9ff;
+
+    }
+
+
+    #cover Button:hover{
+    width:85% ;
+    }
+
+
+    /* .right>ul>li .utube, .right>ul>li .fb{ */
+        /* display: block; */
+    /* } */
+
+
+    #menubar>li>a{       
+        padding: 14px 5px;
+        }
+
+        #cover img{
+            width: 250px;
+            }
+
+            #cover h2{
+            font-size: 1em;
+            }
+
+        
+        #menu .logo img, #menu .logo    {
+        display: none;
+        }
+
+
+        .content-2>.image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: max-content;
+            padding: 3em 1em;
+        }
+        
+        
+        .content-2>.image>img{
+            max-width: 200px;
+            height: max-content;
+        }
+        
+        .content-1>.image>img{
+            max-width: 100%;
+            height: max-content;
+        } 
+
+
+        .right>ul>li .fb{
+            margin: 12px 8px 0 0;
+            width: 18px;
+            transition: 500ms;
+        }
+        
+        
+        .right>ul>li .utube{
+            margin: 12px 5px 0 0;
+            width: 18px;
+            transition: 500ms;
+        }
+        
+        
+        .right>ul>li .utube:hover, .right>ul>li .fb:hover {
+        width: 18px ;
+        }
+
+        .right>ul>li .fb{
+    margin: 12px 10px 0 0;
+    width: 20px;
+    transition: 500ms;
+}
+
+
+.right>ul>li .utube{
+    margin: 12px 10px 0 0;
+    width: 22px;
+    transition: 500ms;
+}
+
+
+.right>ul>li .utube:hover, .right>ul>li .fb:hover {
+width: 24px ;
+}
+
+.content-1>.text>button{
+    width: 80%;
+}
+.g-heading>h2{
+    padding: 10px;
+}
+.btn-more>a{
+font-size: 1em;
+border-radius: 10px;
+padding: 1em 2em;
+}
+
+.cv-image>.btn>.btn-cv>a {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #00647b;
+    font-size: .7em;
+    /* width: 9em; */
+    /* transition: all 500ms; */
+}
+.cv-data>.cv-name>h2 {
+    font-size: 2rem;
+    color: #ff8b00d1;
+    padding: .3em;
+}
+
+.card-contact h2 {
+    padding: 0.5em 1em;
+}
+
+
+
+form tr td, form tr td input, form tr td textarea  {
+    width: 100%;
+    /* padding: .8em; */
+    /* max-width: 100%; */
+    padding: 5px 30px;
+}
+.form-2 form tr td:nth-child(1){
+    padding-bottom: 0;
+}
+.form-2 form tr td:nth-child(2){
+    padding-top: 4px;
+}
+.content-1>.text>h2{
+    padding-bottom: 0;
+}
+form tr #submit button {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px 60px;
+    /* margin: 1.8em auto; */
+}
+form tr:last-child td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form tr #submit button:hover {
+    padding: 0.5em 5em;
+}
+
+
+.form-2 form #head td {
+    display: none;
+}
+form tr{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+}
